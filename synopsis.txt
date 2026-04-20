@@ -1,0 +1,76 @@
+PROJECT SYNOPSIS: AGI IDEA ANALYZER (TRUEANALYSER)
+
+1. PROJECT TITLE
+----------------
+AGI Idea Analyzer (Trueanalyser)
+Sub-title: An Intelligent Framework for Real-Time Project Feasibility and Market Analysis
+
+2. INTRODUCTION
+---------------
+In the rapidly evolving landscape of technology and entrepreneurship, thousands of ideas are generated daily, yet many fail due to a lack of structured feasibility analysis or market grounding. AGI Idea Analyzer (Trueanalyser) is a state-of-the-art AI-powered platform designed to provide instant, data-driven critiques of project ideas across 30+ diverse domains. By leveraging large language models (LLMs) and real-time web intelligence, it bridges the gap between raw concepts and actionable business intelligence.
+
+3. OBJECTIVE
+------------
+The primary objectives of this project are:
+- To automate the preliminary feasibility assessment of project ideas using Machine Learning.
+- To provide multi-dimensional scoring (Feasibility, Innovation, Risk, Impact, Complexity).
+- To generate realistic budget breakdowns and implementation timelines based on current market trends.
+- To use real-time web search for grounding AI responses in factual, up-to-date information.
+- To offer a highly interactive and intuitive user interface for seamless idea submission and review.
+
+4. PROBLEM STATEMENT
+--------------------
+Aspiring entrepreneurs and students often struggle with "analysis paralysis" or proceed with ideas that lack technical or economic viability. Traditional consulting is expensive, and manual research is time-consuming. There is a need for a tool that can instantly provide a professional-grade analysis, identifying potential pitfalls (cons) and strengths (pros) of an idea before significant resources are invested.
+
+5. PROPOSED SOLUTION
+--------------------
+Trueanalyser provides a "one-stop" digital consultant. Users submit an idea via a domain-specific form. The system then:
+1. Performs real-time web scraping/search to understand the current market context.
+2. Uses a custom-trained ML model (TF-IDF + Ridge Regression) for baseline scoring.
+3. Utilizes the Anthropic Claude API to generate a deep-dive qualitative analysis.
+4. Produces a comprehensive report including a target budget, technical requirements, and AI-generated project visuals.
+
+6. SYSTEM ARCHITECTURE
+----------------------
+The system follows a modern full-stack decoupled architecture:
+- Frontend Layer: React-based Single Page Application (SPA) built with Vite for high performance and responsiveness.
+- Backend API Layer: FastAPI (Python) handles request routing, data gathered via web search, and AI model orchestration.
+- Intelligence Layer: 
+    - Baseline ML: Scikit-Learn for initial domain-based complexity scoring.
+    - Cognitive Engine: Anthropic Claude API for high-level reasoning and synthesis.
+    - Search Engine: DuckDuckGo API integration for real-time market data.
+- Data Flow: User Input -> Search Enrichment -> ML Scoring -> AI Synthesis -> Visual Analysis -> Final Report.
+
+7. HARDWARE & SOFTWARE REQUIREMENTS
+-----------------------------------
+Software Requirements:
+- Programming Languages: Python 3.10+, JavaScript/TypeScript
+- Frameworks: FastAPI, React.js
+- Libraries: Scikit-learn, Pydantic, Tailwind CSS
+- APIs: Anthropic Claude, DuckDuckGo Search API
+- Tools: Vite, NPM, Uvicorn
+
+Hardware Requirements (Development):
+- Processor: Intel Core i5 / AMD Ryzen 5 or higher
+- RAM: 8 GB (Minimum)
+- Internet: High-speed connection for real-time API calls
+
+8. KEY FEATURES
+---------------
+- 30+ Domain Support: Analysis for Engineering, Healthcare, Fintech, EdTech, and more.
+- Dynamic ML Scoring: Interactive charts showing feasibility, innovation, and risk.
+- Budgetary Intelligence: Category-wise estimated costs in USD.
+- Temporal Analysis: Expected development phases and completion timeline.
+- AI Visuals: Automated generation of project-themed imagery.
+- Demo Mode: Full functionality using mock data for presentation purposes without API costs.
+
+9. FUTURE SCOPE
+---------------
+- User Authentication: Implementing secured user accounts to save and track multiple idea iterations.
+- Export Functionality: Direct export of analysis reports to PDF or Docx formats.
+- Collaborative Features: Sharing analysis with mentors and peers for feedback.
+- Multi-Model Support: Integration with other LLMs (GPT-4, Gemini) for comparative analysis.
+
+10. CONCLUSION
+--------------
+AGI Idea Analyzer (Trueanalyser) represents a significant step toward democratizing high-level business and technical consulting. By combining the precision of Machine Learning with the reasoning capabilities of LLMs, it provides a powerful platform for innovators to validate and refine their visions, ultimately reducing project failure rates and fostering intelligent innovation.
